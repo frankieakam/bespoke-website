@@ -1,5 +1,6 @@
 /* for custom styles */
 
+/* Gallery Section Styles */
 /* Masonry Grid */
 .masonry-grid {
     column-count: 3;
@@ -116,8 +117,34 @@
     cursor: pointer;
 }
 
-/* Process Timeline */
+.see-more-link {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.see-more-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.see-more-link:hover::after {
+    width: 100%;
+}
+
+/* Ensure smooth hover effects */
+.see-more-link:hover {
+    transform: translateY(-1px);
+}
+
 /* Process Section Styles */
+/* Process Timeline */
 .process-step-horizontal {
     transition: transform 0.3s ease;
 }

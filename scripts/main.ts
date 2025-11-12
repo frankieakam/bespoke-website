@@ -24,7 +24,7 @@ consultationForm.addEventListener('submit', (e) => {
 
     // Better formatting with proper encoding
     const message = `New Consultation Request:%0A%0A` + `*Name:* ${encodeURIComponent(name)}%0A` + `*Phone:* ${encodeURIComponent(phone)}%0A` + `*Location:* ${encodeURIComponent(location)}%0A` + `*Interests:* ${encodeURIComponent(interests)}`;
-    const whatsappUrl = `https://wa.me/2348105725081?text=${message}`;
+    const whatsappUrl = `https://wa.me/2348108738972?text=${message}`;
     
     // Close modal and open WhatsApp
     consultationModal.classList.remove('active');
@@ -44,9 +44,17 @@ const lightboxNext = lightbox.querySelector('.lightbox-next') as HTMLButtonEleme
 const galleryImages = [
     './images/gallery-1.jpg',
     './images/gallery-2.jpg',
-    './images/gallery-3.png',
+    './images/gallery-3.jpgg',
     './images/gallery-4.jpg',
-    // Add all 10 image paths
+    './images/gallery-5.jpg',
+    './images/gallery-6.jpg',
+    './images/gallery-7.jpg',
+    './images/gallery-8.jpg',
+    './images/gallery-9.jpg',
+    './images/gallery-10.jpg',
+    './images/gallery-11.jpg',
+    './images/gallery-12.jpg',
+    './images/gallery-13.jpg',
 ];
 
 let currentImageIndex = 0;
@@ -90,7 +98,7 @@ contactForm.addEventListener('submit', (e) => {
 
     // Better formatting without email
     const whatsappMessage = `New Contact Form Submission:%0A%0A` + `*Name:* ${encodeURIComponent(name)}%0A` + `*Phone:* ${encodeURIComponent(phone)}%0A` + `*Message:* ${encodeURIComponent(message)}`;
-    const whatsappUrl = `https://wa.me/2348105725081?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/2348108738972?text=${whatsappMessage}`;
     
     window.open(whatsappUrl, '_blank');
 
